@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column; /* Вирівнюємо елементи у вертикальний ряд */
+    justify-content: flex-start; /* Починаємо зверху, щоб нічого не злітало */
+    align-items: center;
+    min-height: 100vh; /* Змінюємо height на min-height */
+    margin: 0;
+    background-color: #f9e3e3;
+    background-image: url("imgandgifs/baroukyun.jpg");
+    background-size: cover; /* Розтягує фон на весь екран */
+    background-position: center; /* Центрує */
+    background-repeat: no-repeat; /* Вимикає повтори */
+    font-family: 'Arial', sans-serif;
+}
+
+.container{
+	text-align: center;
+}
+
+h1{
+	width: auto;
+	height: auto;
+}
+
+.gif_container {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє переносити картинки на новий ряд */
+    justify-content: center; /* Вирівнює картинки по центру */
+    gap: 10px; /* Відступи між картинками */
+    max-width: 100%; /* Щоб контент не виходив за межі екрана */
+    overflow: hidden; /* Запобігає скролу */
+    margin-top: 500px;
+}
+
+.gif_container2{
+	display: flex;
+    flex-wrap: wrap; /* Дозволяє переносити картинки на новий ряд */
+    justify-content: center; /* Вирівнює картинки по центру */
+    gap: 10px; /* Відступи між картинками */
+    max-width: 100%; /* Щоб контент не виходив за межі екрана */
+    overflow: hidden; /* Запобігає скролу */
+}
+
+.header_text{
+	font-size: 3em;
+	color: crimson;
+}
+
+.gif_container img, .gif_container2 img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,32 @@
+@media (max-width: 1024px) {
+    .header_text {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_text {
+        font-size: 2em;
+    }
+
+    .gif_container, .gif_container2 {
+        flex-direction: column; /* Картинки йдуть в колонку */
+        align-items: center;
+    }
+
+    .gif_container img, .gif_container2 img {
+        max-width: 80%; /* Зменшує картинки на малих екранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .header_text {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .gif_container img, .gif_container2 img {
+        max-width: 90%;
+        height: auto;
+    }
+}
